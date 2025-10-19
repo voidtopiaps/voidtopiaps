@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VoidTopia PS - Meet Krand, Founder of the cyberpunk gaming universe.">
-    <title>VoidTopia PS - Founder Profile</title>
+    <meta name="description" content="🌌 Welcome to VOIDTOPIA — Growtopia private server built for grinders, dreamers, and cosmic adventurers. Founded by Krand.">
+    <title>VOIDTOPIA - Growtopia Private Server</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -12,7 +12,9 @@
             font-family: 'Poppins', sans-serif;
             background-color: #0a0015;
             color: #fff;
-            text-align            transition3s ease;
+            text-align: center;
+            overflow-x: hidden;
+            transition: all 0.3s ease;
         }
         header {
             background: url('banner.png') no-repeat center center;
@@ -89,7 +91,7 @@
             margin: 50px auto;
             width: 90%;
             max-width: 800px;
-            background: rgba(20, 0, 40, 0.6);
+            background: rgba( 0, 40, 0.6);
             padding: 20px;
             border-radius: 20px;
             box-shadow: 0 0 20px #7a00ff;
@@ -99,6 +101,81 @@
             text-align: center;
             color: #b100ff;
             text-shadow: 0 0 10px #7a00ff;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .welcome-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .welcome-main {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #fff;
+            margin: 20px 0 15px 0;
+            line-height: 1.3;
+            text-shadow: 0 0 15px #7a00ff;
+            animation: cosmicGlow 3s ease-in-out infinite alternate;
+        }
+        @keyframes cosmicGlow {
+            from { 
+                text-shadow: 0 0 10px #7a00ff, 0 0 20px #b100ff;
+                transform: scale(1);
+            }
+            to { 
+                text-shadow: 0 0 20px #7a00ff, 0 0 30px #b100ff, 0 0 40px #ff00ff;
+                transform: scale(1.02);
+            }
+        }
+        .welcome-galaxy {
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .welcome-founder {
+            1.5em;
+            color: #ff6b6b;
+            font-weight: 700;
+            margin: 25px 0 20px 0;
+            text-shadow: 0 0 15px #ff4757;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        .growtopia-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #00ff88, #00cc6a);
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9em;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+            animation: badgeGlow 2s ease-in-out infinite alternate;
+        }
+        @keyframes badgeGlow {
+            from { box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3); }
+            to { box-shadow: 0 5px 25px rgba(0, 255, 136, 0.5); }
+        }
+        .welcome-description {
+            font-size: 1.1em;
+            color: #ccc;
+            line-height: 1.6;
+            margin: 20px 0;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .button-grid {
             display: grid;
@@ -114,6 +191,18 @@
             }
             button {
                 width: 100%;
+            }
+            .welcome-main {
+                font-size: 1.8em;
+            }
+            .welcome-galaxy {
+                font-size: 2.5em;
+            }
+            .welcome-founder {
+                font-size: 1.3em;
+            }
+            h2 {
+                font-size: 2em;
             }
         }
         
@@ -270,7 +359,7 @@
             box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
         }
         
-        /* Other modals remain the same */
+        /* Other modals */
         .info-modal {
             display: none;
             background: rgba(0, 0, 0, 0.9);
@@ -317,7 +406,7 @@
             z-index: 999;
         }
         pre {
-, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.3);
             padding: 10px;
             border-radius: 10px;
             color: #fff;
@@ -330,17 +419,27 @@
 </head>
 <body>
     <header>
-        <h1>VoidTopia PS</h1>
+        <h1>VOIDTOPIA</h1>
     </header>
     
     <section>
-        <h2>Welcome to the Void</h2>
-        <p>VoidTopia PS is your gateway to immersive PlayStation adventures in a cyberpunk universe. Join our <strong>Discord community</strong> to access the main server, get gameplay guides, and connect with other players. Meet our visionary founder Krand behind this digital universe.</p>
+        <div class="welcome-container">
+            <div class="welcome-galaxy">🌌</div>
+            <div class="welcome-main">
+                Welcome to VOIDTOPIA — Growtopia private server built for grinders, dreamers, and cosmic adventurers.
+            </div>
+            <div class="welcome-founder">Founded by Krand</div>
+            <div class="growtopia-badge">Growtopia Private Server</div>
+            <p class="welcome-description">
+                Join our Discord community to access the main server, get gameplay guides, connect with fellow adventurers, 
+                and explore infinite worlds in this unique cyberpunk universe created by visionary founder Krand.
+            </p>
+        </div>
     </section>
     
     <section>
         <h2>Main Menu</h2>
-        <p style="text-align: center; color: #ff80ff;">Click the buttons below to join our Discord servers and meet our founder</p>
+        <p style="text-align: center; color: #ff80ff;">Launch your VOIDTOPIA adventure - Join our Discord communities and meet our founder</p>
         <div class="button-grid">
             <button class="discord-btn" onclick="joinMainServer()" aria-label="Join Main Server Discord">
                 <span class="discord-icon">💬</span>MAIN SERVER
@@ -378,7 +477,7 @@
                      loading="lazy">
                 
                 <div class="profile-bio">
-                    <strong>About Krand:</strong> The mastermind behind VoidTopia PS, Krand envisioned a cyberpunk universe where players could escape into infinite digital worlds. With a background in game development and digital art, Krand created VoidTopia to push the boundaries of PlayStation gaming. Inspired by classic sci-fi and modern cyberculture, Krand's passion for immersive storytelling drives every aspect of the VoidTopia experience.
+                    <strong>About Krand:</strong> The mastermind behind VOIDTOPIA, Krand envisioned a Growtopia private server where grinders, dreamers, and cosmic adventurers could escape into infinite digital worlds. With extensive experience in game development and private server architecture, Krand created VOIDTOPIA to push the boundaries of Growtopia gaming. Inspired by classic sci-fi, cyberculture, and the endless possibilities of private servers, Krand's passion for immersive storytelling and community building drives every aspect of the VOIDTOPIA experience.
                 </div>
                 
                 <div class="profile-stats">
@@ -403,18 +502,18 @@
                 <div class="contact-links">
                     <a href="https://discord.gg/4bFbVJZbAd" class="contact-btn" target="_blank">💬 Join Community</a>
                     <a href="mailto:krand@voidtopia.ps" class="contact-btn">✉️ Contact Krand</a>
-                    <a href="#" class="contact-btn" onclick="closeFounderProfile()">← Back to VoidTopia</a>
+                    <a href="#" class="contact-btn" onclick="closeFounderProfile()">← Back to VOIDTOPIA</a>
                 </div>
                 
                 <p style="margin-top: 30px; font-size: 0.9em; color: #95a5a6; font-style: italic;">
-                    "In the void, we find infinite possibilities. Welcome to my digital universe." 
-                    <br>— Krand, Founder of VoidTopia PS
+                    "In the void, we find infinite possibilities. Welcome to my Growtopia universe." 
+                    <br>— Krand, Founder of VOIDTOPIA
                 </p>
             </div>
         </div>
     </div>
     
-    <!-- Staffs Modal (unchanged) -->
+    <!-- Staffs Modal -->
     <div id="staffModal" class="info-modal">
         <button class="modal-close" onclick="closeStaffModal()">&times;</button>
         <h3 style="color: #b100ff; margin-top: 0;">Our Dedicated Staff Team</h3>
@@ -422,22 +521,22 @@
             <li><strong>💻 Lead Developer:</strong> Alex Void<br><small>Core engine architect and technical lead</small></li>
             <li><strong>🎨 Lead Designer:</strong> Nova Pixel<br><small>UI/UX visionary and visual artist</small></li>
             <li><strong>🗣️ Community Manager:</strong> Echo Link<br><small>Player support and community engagement</small></li>
-            <li><🛡️ Moderation Team:</strong> Shadow Squad<br><small>Keeping the void safe and fun for everyone</small></li>
+            <li><strong>🛡️ Moderation Team:</strong> Shadow Squad<br><small>Keeping the void safe and fun for everyone</small></li>
         </div>
         <p style="margin-top: 20px; font-size: 0.9em;">Join our Discord to meet the full team and get involved!</p>
     </div>
     
     <script>
-        // Discord Integration Functions (unchanged)
+        // Discord Integration Functions
         function joinMainServer() {
-            if (confirm('🚀 Joining MAIN SERVER Discord Community!\n\nYou will be redirected to:\nhttps://discord.gg/4bFbVJZbAd\n\nJoin thousands of players in the central VoidTopia hub!')) {
+            if (confirm('🚀 Joining MAIN SERVER Discord Community!\n\nYou will be redirected to:\nhttps://discord.gg/4bFbVJZbAd\n\nJoin thousands of grinders, dreamers, and cosmic adventurers in the central VOIDTOPIA hub!')) {
                 console.log('Redirecting to Main Server Discord...');
                 window.open('https://discord.gg/4bFbVJZbAd', '_blank');
             }
         }
         
         function showHowToPlay() {
-            if (confirm('📚 Opening HOW TO PLAY Discord Guide!\n\nYou will be redirected to:\nhttps://discord.gg/D7sDD2GTvf\n\nGet comprehensive tutorials, tips, and community support!')) {
+            if (confirm('📚 Opening HOW TO PLAY Discord Guide!\n\nYou will be redirected to:\nhttps://discord.gg/D7sDD2GTvf\n\nGet comprehensive tutorials, tips, private server guides, and community support for VOIDTOPIA!')) {
                 console.log('Redirecting to How to Play Discord...');
                 window.open('https://discord.gg/D7sDD2GTvf', '_blank');
             }
@@ -446,77 +545,9 @@
         // Founder Profile Functions
         function showFounderProfile() {
             document.getElementById('founderOverlay').style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            document.body.style.overflow = 'hidden';
             console.log('Founder profile opened - Welcome to Krand\'s page');
-            
-            // Track founder profile view
-            console.log('User viewed founder profile at', new Date().toLocaleTimeString());
         }
         
         function closeFounderProfile(event) {
-            if (event) event.stopPropagation(); // Prevent overlay click from closing when clicking buttons
-            document.getElementById('founderOverlay').style.display = 'none';
-            document.body.style.overflow = 'auto'; // Restore scrolling
-            console.log('Founder profile closed');
-        }
-        
-        // Staff Modal Functions (unchanged)
-        function showStaffs() {
-            document.getElementById('overlay').style.display = 'block';
-            document.getElementById('staffModal').style.display = 'block';
-            console.log('Staff modal opened');
-        }
-        
-        function closeStaffModal() {
-            document.getElementById('staffModal').style.display = 'none';
-            document.getElementById('overlay').style.display = 'none';
-        }
-        
-        function closeAllModals() {
-            document.getElementById('staffModal').style.display = 'none';
-            document.getElementById('overlay').style.display = 'none';
-        }
-        
-        // Enhanced button interactions
-        document.querySelectorAll('button').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const buttonText = btn.textContent.trim();
-                console.log(`${buttonText} clicked at ${new Date().toLocaleTimeString()}`);
-                
-                // Special animation for founder button
-                if (buttonText.includes('FOUNDER')) {
-                    btn.style.transform = 'scale(0.95) rotate(5deg)';
-                    setTimeout(() => {
-                        btn.style.transform = 'scale(1) rotate(0deg)';
-                    }, 200);
-                } else {
-                    btn.style.transform = 'scale(0.95)';
-                    setTimeout(() => {
-                        btn.style.transform = 'scale(1)';
-                    }, 150);
-                }
-            });
-            
-            // Keyboard accessibility
-            btn.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    btn.click();
-                }
-            });
-        });
-        
-        // Close founder profile when Escape key is pressed
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                const founderOverlay = document.getElementById('founderOverlay');
-                if (founderOverlay.style.display === 'block') {
-                    closeFounderProfile();
-                }
-            }
-        });
-    </script>
-</body>
-</html>
-
-    
+            if 
