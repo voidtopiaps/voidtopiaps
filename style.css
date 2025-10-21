@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #b9fbc0, #74d680);
+  color: #1e4620;
+  text-align: center;
+}
+.banner {
+  background: url('banner.png') no-repeat center center/cover;
+  padding: 120px 20px;
+  color: #fff;
+  text-shadow: 0 0 15px #1e4620;
+  background-blend-mode: multiply;
+}
+.banner.small {
+  padding: 80px 20px;
+}
+.gold-text {
+  background: linear-gradient(90deg, #ffcf40, #d39b00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3em;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.intro {
+  padding: 40px 20px;
+}
+.buttons button, .back-btn button {
+  background-color: #74d680;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+button:hover {
+  background-color: #45a049;
+}
+.tutorials {
+  padding: 40px 20px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.tutorials section {
+  background: #ffffffcc;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+footer {
+  background-color: #1e4620;
+  color: #faffb8;
+  padding: 20px;
+  margin-top: 40px;
+}
+a {
+  color: #1e4620;
+  text-decoration: underline;
+}
