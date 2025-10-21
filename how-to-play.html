@@ -1,76 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How to Play - LUCKYTOPIA PS</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Play - LUCKYTOPIA PS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="banner small">
-  <h1 class="gold-text">How to Play</h1>
-  <p>Follow the guides below to join LUCKYTOPIA PS on your device 🍀</p>
-</header>
+  <header class="banner small">
+    <h1 class="gold-text">How to Play</h1>
+    <p>Follow the guides below to join LUCKYTOPIA PS on your device 🍀</p>
+  </header>
 
-<main class="tutorials">
-  <section>
-    <h2>🟢 Android / Power Tunnel</h2>
-    <p><strong>POWER TUNNEL</strong><br>
-    VoidTopia Link: <a href="https://growsoft.cc/android.txt" target="_blank">https://growsoft.cc/android.txt</a><br>
-    App / APK Link: For Power Tunnel Click How To Play</p>
-  </section>
+  <main class="tutorials">
+    <section>
+      <h2>🟢 Android / Power Tunnel</h2>
+      <p><strong>POWER TUNNEL</strong><br>
+      VoidTopia Link: <a href="https://growsoft.cc/android.txt" target="_blank" rel="noopener noreferrer">https://growsoft.cc/android.txt</a><br>
+      App / APK Link: For Power Tunnel — follow the installation steps in the APK provider's instructions. Make sure you only install APKs from sources you trust and enable "Install unknown apps" for the installing app in Android Settings if required.</p>
+    </section>
 
-  <section>
-    <h2>🍎 iOS</h2>
-    <p><strong>iOS TUTORIAL</strong><br>
-    1 - Download App called: "Surge 5" from App Store.<br>
-    2 - Press "OK".<br>
-    3 - Click on "Default.conf".<br>
-    4 - Click on "IMPORT" - Download Profile from URL.<br>
-    5 - Put URL from your copy when click iOS host button above and click "OK" and "Done".<br>
-    6 - Press "SETUP" and agree to policy by clicking "OK" and "Allow" for VPN Configuration.<br>
-    7 - Done, then open "Growtopia" and Connect!</p>
-  </section>
+    <section>
+      <h2>🍎 iOS</h2>
+      <p><strong>iOS TUTORIAL</strong><br>
+      1 - Install the app "Surge 5" from the App Store.<br>
+      2 - Open Surge and tap "Default.conf" (or the configuration area).<br>
+      3 - Tap "IMPORT" → "Download Profile from URL".<br>
+      4 - Paste the profile URL (the iOS host/profile link you have) and confirm "OK".<br>
+      5 - When prompted to install a VPN profile, tap "Allow" (you'll need to enter passcode or authenticate).<br>
+      6 - Back in Surge, enable the configuration and connect the proxy/VPN. Then open Growtopia and connect.<br>
+      Note: Surge configuration and iOS profile installation require that you trust the profile source. Only import profiles from sources you trust.</p>
+    </section>
 
-  <section>
-    <h2>💻 Mac</h2>
-    <p><strong>MAC TUTORIAL</strong><br>
-    1 - Press ⊞ Win+R to open the "Run" window.<br>
-    2 - Type in C:\Windows\System32\drivers\etc in the textbox.<br>
-    3 - Find file named hosts.<br>
-    4 - Right-click on "hosts" and edit with Notepad/text editor.<br>
-    5 - Add IPs below.<br>
-    6 - Save and log on to Growtopia.<br>
-    Server Name: LUCKY<br>
-    91.134.85.13 growtopia1.com<br>
-    91.134.85.13 growtopia2.com<br>
-    91.134.85.13 www.growtopia1.com<br>
-    91.134.85.13 www.growtopia2.com</p>
-  </section>
+    <section>
+      <h2>🪟 Windows (Computer)</h2>
+      <p><strong>WINDOWS HOSTS EDIT (requires Admin)</strong><br>
+      1 - Press Win+R, type <code>C:\Windows\System32\drivers\etc</code>, and press Enter.<br>
+      2 - Find the file named <code>hosts</code> and right-click → "Open with" → Notepad (run Notepad as Administrator to save changes).<br>
+      3 - Add the IPs/hostnames below (each entry on its own line):<br>
+      <pre>
+91.134.85.13 growtopia1.com
+91.134.85.13 growtopia2.com
+91.134.85.13 www.growtopia1.com
+91.134.85.13 www.growtopia2.com
+      </pre>
+      4 - Save the file (you must have admin privileges).<br>
+      5 - Restart Growtopia (and/or your browser) to apply changes.<br>
+      Warning: editing the hosts file changes how your system resolves hostnames. Only add entries you trust, and remove them when no longer needed.</p>
+    </section>
 
-  <section>
-    <h2>🖥️ Computer</h2>
-    <p><strong>COMPUTER TUTORIAL</strong><br>
-    1 - Press ⊞ Win+R to open the "Run" window.<br>
-    2 - Type in C:\Windows\System32\drivers\etc in the textbox.<br>
-    3 - Find file named hosts.<br>
-    4 - Right-click on "hosts" and edit with Notepad/text editor.<br>
-    5 - Add IPs below.<br>
-    6 - Save and log on to Growtopia.<br>
-    Server Name: LUCKY<br>
-    91.134.85.13 growtopia1.com<br>
-    91.134.85.13 growtopia2.com<br>
-    91.134.85.13 www.growtopia1.com<br>
-    91.134.85.13 www.growtopia2.com</p>
-  </section>
+    <section>
+      <h2> macOS</h2>
+      <p><strong>macOS HOSTS EDIT (requires Admin)</strong><br>
+      1 - Open Terminal.<br>
+      2 - Run: <code>sudo nano /etc/hosts</code> (enter your password when prompted).<br>
+      3 - Add the lines below at the end of the file:<br>
+      <pre>
+91.134.85.13 growtopia1.com
+91.134.85.13 growtopia2.com
+91.134.85.13 www.growtopia1.com
+91.134.85.13 www.growtopia2.com
+      </pre>
+      4 - Save and exit Nano: Ctrl+O (Enter) then Ctrl+X.<br>
+      5 - Flush DNS cache (example command for many recent macOS versions):<br>
+      <code>sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder</code><br>
+      6 - Restart Growtopia (and/or your browser) to apply changes.<br>
+      Note: If you prefer a GUI editor, open TextEdit with elevated privileges or use a graphical hosts editor. Always back up the hosts file before changing it.</p>
+    </section>
 
-  <div class="back-btn">
-    <button onclick="window.location.href='index.html'">⬅ Back to Home</button>
-  </div>
-</main>
+    <p style="font-style:italic">General security note: editing hosts or importing VPN/proxy profiles can affect your network and privacy. Only use trusted IPs/profiles and understand the changes you're making.</p>
 
-<footer>
-  <p>© 2025 LUCKYTOPIA PS. All rights reserved.</p>
-</footer>
+    <div class="back-btn">
+      <button onclick="window.location.href='index.html'" aria-label="Back to Home">⬅ Back to Home</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 LUCKYTOPIA PS. All rights reserved.</p>
+  </footer>
 </body>
 </html>
